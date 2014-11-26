@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:showDividers="end">
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="53dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_editor"
+                android:id="@+id/textView"
+                android:layout_weight="0.7"
+                android:textColor="#ff17bd90"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar"
+                android:id="@+id/btGuardar"
+                android:layout_weight="0.3"
+                android:onClick="guardar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/scrollView"
+                android:background="@drawable/borde">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etTexto" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

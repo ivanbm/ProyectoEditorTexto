@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProyectoSelectorApp</string>
+    <string name="msgguardar">Guardado. Para salir pulse "Atras".</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_editor">Editor de Texto</string>
+    <string name="guardar">Guardar</string>
+
+</resources>
